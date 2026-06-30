@@ -85,25 +85,32 @@
     .sec-title { font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 48px; }
 
 /* ===== ABOUT ===== */
-    .about-grid { display: grid; grid-template-columns: 320px 1fr; gap: 64px; align-items: start; }
+    .about-top { display: flex; gap: 48px; align-items: flex-start; margin-bottom: 48px; }
     .photo-placeholder {
-      width: 100%; aspect-ratio: 3/4; border-radius: var(--r);
+      width: 260px; aspect-ratio: 3/4; border-radius: var(--r); flex-shrink: 0;
       background: var(--bg-sub); border: 1px solid var(--border);
       display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
       color: var(--ink-3); font-size: 13px;
     }
-    .about-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: var(--r); }
-    .about-bio { font-size: 16px; color: var(--ink-2); line-height: 1.8; margin-bottom: 32px; }
-    .about-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .about-card { border: 1px solid var(--border); border-radius: var(--r); padding: 18px 20px; }
-    .about-card h4 { font-size: 11px; font-weight: 600; color: var(--ink-3); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
-    .about-card li { font-size: 13px; color: var(--ink-2); padding: 7px 0; border-bottom: 1px solid var(--border); display: flex; flex-direction: column; gap: 2px; }
+    .about-photo { width: 260px; aspect-ratio: 3/4; object-fit: cover; border-radius: var(--r); flex-shrink: 0; }
+    .about-bio { font-size: 16px; color: var(--ink-2); line-height: 1.8; }
+
+    .about-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .about-card { border: 1px solid var(--border); border-radius: var(--r); padding: 28px 32px; background: var(--bg); }
+    .about-card h4 { font-size: 12px; font-weight: 600; color: var(--ink-3); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 20px; }
+    .about-card ul { display: flex; flex-direction: column; }
+    .about-card li {
+      font-size: 14px; color: var(--ink-2); padding: 16px 0; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    }
     .about-card li:last-child { border-bottom: none; padding-bottom: 0; }
-    .about-card li strong { font-size: 14px; font-weight: 500; color: var(--ink); }
-    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .about-card li:first-child { padding-top: 0; }
+    .about-card li strong { font-size: 16px; font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .about-card li span { font-size: 13px; color: var(--ink-2); white-space: nowrap; }
+
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
     .tag { font-size: 13px; color: var(--ink-2); background: var(--bg-sub); border: 1px solid var(--border); border-radius: 980px; padding: 5px 14px; transition: border-color .2s, color .2s; }
     .tag:hover { border-color: var(--accent); color: var(--accent); }
-
     /* ===== WORK ===== */
     .work-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
     .work-card { border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; display: block; transition: box-shadow .25s, transform .25s; background: var(--bg); }
@@ -265,7 +272,7 @@
       <div class="work-grid">
 
         <a href="https://app.notion.com/p/1fd7b8d381b281d09e84d8a37c00c2a1?source=copy_link" target="_blank" class="work-card span2 fade">
-          <div class="work-thumb">🎨</div>
+          <div class="work-thumb"><img src="https://i.ifh.cc/X2PL2L.jpg" alt="QOO10"></div>
           <div class="work-body">
             <p class="work-cat">Qoo10 JAPAN</p>
             <p class="work-name">🇯🇵큐텐재팬 | 행사기획, 운영, 디자인</p>
@@ -274,11 +281,11 @@
         </a>
 
         <a href="#" target="_blank" class="work-card fade d1">
-          <div class="work-thumb">📱</div>
+          <div class="work-thumb"><img src="https://i.ifh.cc/w8Ty27.jpg" alt="QOO10"></div>
           <div class="work-body">
-            <p class="work-cat">Mobile App</p>
-            <p class="work-name">프로젝트 제목 2</p>
-            <p class="work-sub">Figma · Mobile UX · Prototype</p>
+            <p class="work-cat">PROMOTION</p>
+            <p class="work-name">🔥프로모션 | 공식몰 및 입점몰 행사 운영</p>
+            <p class="work-sub">CAFE24 · 스마트스토어 · 카카오톡 선물하기</p>
           </div>
         </a>
 
