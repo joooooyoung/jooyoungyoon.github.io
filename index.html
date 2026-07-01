@@ -94,19 +94,18 @@
     .about-content { flex: 1; min-width: 0; }
     .about-bio { font-size: 16px; color: var(--ink-2); line-height: 1.8; margin-bottom: 32px; }
 
-    .about-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .about-card { border: 1px solid var(--border); border-radius: var(--r); padding: 22px 24px; background: var(--bg); }
+    .about-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 0; }
+    .about-card { border: 1px solid var(--border); border-radius: var(--r); padding: 24px 28px; background: var(--bg); }
     .about-card h4 { font-size: 11px; font-weight: 600; color: var(--ink-3); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px; }
     .about-card ul { display: flex; flex-direction: column; }
     .about-card li {
-      font-size: 13px; color: var(--ink-2); padding: 12px 0; border-bottom: 1px solid var(--border);
-      display: flex; flex-direction: column; gap: 3px;
+      font-size: 13px; color: var(--ink-2); padding: 14px 0; border-bottom: 1px solid var(--border);
+      display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: nowrap;
     }
     .about-card li:last-child { border-bottom: none; padding-bottom: 0; }
     .about-card li:first-child { padding-top: 0; }
-    .about-card li strong { font-size: 14px; font-weight: 600; color: var(--ink); }
-    .about-card li span { font-size: 12px; color: var(--ink-2); }
-
+    .about-card li strong { font-size: 14px; font-weight: 600; color: var(--ink); white-space: nowrap; }
+    .about-card li span { font-size: 12px; color: var(--ink-2); white-space: nowrap; }
     .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
     .tag { font-size: 13px; color: var(--ink-2); background: var(--bg-sub); border: 1px solid var(--border); border-radius: 980px; padding: 5px 14px; transition: border-color .2s, color .2s; }
     .tag:hover { border-color: var(--accent); color: var(--accent); }
