@@ -82,29 +82,16 @@
     .sec-label { font-size: 12px; font-weight: 500; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 12px; }
     .sec-title { font-size: clamp(28px, 4vw, 40px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 48px; }
 
-    /* ABOUT — 사진 왼쪽 고정 + 오른쪽에 소개/경력/학력/태그 전부 */
+   /* ABOUT */
     .about-top { display: flex; gap: 48px; align-items: flex-start; margin-bottom: 40px; }
     .about-photo-col { width: 280px; flex-shrink: 0; }
-    .about-grid { display: flex; gap: 56px; align-items: flex-start; }
-    .about-photo-col { width: 280px; flex-shrink: 0; }
-    .photo-placeholder {
-      width: 100%; aspect-ratio: 3/4; border-radius: var(--r);
-      background: var(--bg-sub); border: 1px solid var(--border);
-      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;
-      color: var(--ink-3); font-size: 13px;
-    }
     .about-photo { width: 100%; aspect-ratio: 3/4; object-fit: cover; border-radius: var(--r); }
-    .about-content { flex: 1; min-width: 0; }
-    .about-bio { font-size: 16px; color: var(--ink-2); line-height: 1.8; margin-bottom: 32px; }
-
-    .about-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 0; }
+    .about-bio { font-size: 16px; color: var(--ink-2); line-height: 1.8; }
+    .about-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .about-card { border: 1px solid var(--border); border-radius: var(--r); padding: 24px 28px; background: var(--bg); }
     .about-card h4 { font-size: 11px; font-weight: 600; color: var(--ink-3); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px; }
     .about-card ul { display: flex; flex-direction: column; }
-    .about-card li {
-      font-size: 13px; color: var(--ink-2); padding: 14px 0; border-bottom: 1px solid var(--border);
-      display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: nowrap;
-    }
+    .about-card li { font-size: 13px; color: var(--ink-2); padding: 14px 0; border-bottom: 1px solid var(--border); display: flex; flex-direction: row; justify-content: space-between; align-items: center; gap: 12px; }
     .about-card li:last-child { border-bottom: none; padding-bottom: 0; }
     .about-card li:first-child { padding-top: 0; }
     .about-card li strong { font-size: 14px; font-weight: 600; color: var(--ink); white-space: nowrap; }
